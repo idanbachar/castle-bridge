@@ -2,8 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net481</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CastleBridge.OnlineLibraries\CastleBridge.OnlineLibraries.csproj" />

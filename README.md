@@ -160,8 +160,8 @@ Winning requires class coordination, positioning, and smart timing.
 
 - Windows 10 or newer
 - Visual Studio 2022 (recommended)
-- .NET Framework 4.8 Developer Pack
-- .NET SDK 3.1 (for server project)
+- .NET 10 SDK
+- .NET Framework 4.8.1 Developer Pack (for server project)
 - MonoGame 3.8+ framework and tools (DesktopGL / Content Builder)
 
 ### Install MonoGame (Important)
