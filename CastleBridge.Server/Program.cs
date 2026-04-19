@@ -7,7 +7,7 @@ namespace CastleBridge.Server {
         static void Main(string[] args) {
 
             //Start server:
-            Server server = new Server("192.168.1.17", 4441);
+            Server server = new Server("127.0.0.1", 4441);
             server.Start();
         }
     }

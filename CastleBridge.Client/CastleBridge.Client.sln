@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastleBridge.Client", "CastleBridge.Client\CastleBridge.Client.csproj", "{03A1672F-A9E7-4C53-89FC-7BB155CF0AFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastleBridge.Client", "CastleBridge.Client.Fixed.csproj", "{03A1672F-A9E7-4C53-89FC-7BB155CF0AFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
