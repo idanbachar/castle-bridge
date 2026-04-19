@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CastleBridge.OnlineLibraries">
+      <HintPath>..\..\..\castlebridge-online-libraries\CastleBridge.OnlineLibraries\CastleBridge.OnlineLibraries\bin\Debug\netstandard2.0\CastleBridge.OnlineLibraries.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
