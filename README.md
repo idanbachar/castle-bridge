@@ -159,34 +159,7 @@ Winning requires class coordination, positioning, and smart timing.
 ### Prerequisites
 
 - Windows 10 or newer
-- Visual Studio 2022 (recommended)
-- .NET 10 SDK
-- .NET Framework 4.8.1 Developer Pack (for server project)
-- MonoGame 3.8+ framework and tools (DesktopGL / Content Builder)
-
-### Install MonoGame (Important)
-
-The client is a MonoGame DesktopGL project and needs MonoGame build targets and content tools installed.
-
-1. Install MonoGame for Visual Studio 2022 (3.8 or newer).
-2. Restart Visual Studio after installation.
-3. From this repository, restore local MonoGame CLI tools:
-
-```bash
-cd CastleBridge.Client
-dotnet tool restore
-cd ..
-```
-
-4. Verify MonoGame tool installation:
-
-```bash
-dotnet tool list --local
-```
-
-You should see dotnet-mgcb in the local tools list.
-
-If you get build errors related to missing MonoGame imports/targets, reinstall MonoGame and ensure Visual Studio was closed during installation.
+- .NET 8.0 SDK (or newer)
 
 ### Clone Repository
 
@@ -217,12 +190,10 @@ Default server endpoint is localhost on port 4441.
 
 ### 2) Start the client
 
-Open [CastleBridge.sln](CastleBridge.sln) in Visual Studio and run the CastleBridge.Client project.
-
-Notes:
-
-- The client project is a classic .NET Framework MonoGame project.
-- Visual Studio is the most reliable way to run it.
+```bash
+cd CastleBridge.Client
+dotnet run
+```
 
 ---
 

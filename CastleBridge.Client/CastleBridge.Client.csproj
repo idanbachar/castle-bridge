@@ -1,153 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{03A1672F-A9E7-4C53-89FC-7BB155CF0AFD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>CastleBridge.Client</RootNamespace>
     <AssemblyName>CastleBridge.Client</AssemblyName>
-    <FileAlignment>512</FileAlignment>
-    <MonoGamePlatform>DesktopGL</MonoGamePlatform>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;LINUX</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <Prefer32Bit>false</Prefer32Bit>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
-    <DefineConstants>TRACE;LINUX</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <Prefer32Bit>false</Prefer32Bit>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Compile Include="Components\Animation\Animation.cs" />
-    <Compile Include="Components\Animation\AnimationState.cs" />
-    <Compile Include="Components\Button\Button.cs" />
-    <Compile Include="Components\Camera\Camera.cs" />
-    <Compile Include="Components\Popup\Popup.cs" />
-    <Compile Include="Map\Location.cs" />
-    <Compile Include="Map\Weather\Cloud\Rain Drop\RainDrop.cs" />
-    <Compile Include="Map\Weather\TimeType.cs" />
-    <Compile Include="Map\Weather\Weather.cs" />
-    <Compile Include="Online\GameClient.cs" />
-    <Compile Include="Screen\Menu\Menu.cs" />
-    <Compile Include="Screen\Menu\MenuPage.cs" />
-    <Compile Include="Screen\Menu\Pages\Character Selection\CharacterSelectionMenu.cs" />
-    <Compile Include="Screen\Menu\Pages\Error\ErrorMenu.cs" />
-    <Compile Include="Screen\Menu\Pages\Loading\LoadingMenu.cs" />
-    <Compile Include="Screen\Menu\Pages\Main Menu\MainMenu.cs" />
-    <Compile Include="Screen\Menu\Pages\Name Selection\NameSelectionMenu.cs" />
-    <Compile Include="Screen\Menu\Pages\Team Selection\TeamSelectionMenu.cs" />
-    <Compile Include="Team\Castle\Castle.cs" />
-    <Compile Include="Team\Castle\Diamond.cs" />
-    <Compile Include="Map\Weather\Cloud\Cloud.cs" />
-    <Compile Include="Map\Entity\MapEntity.cs" />
-    <Compile Include="Map\Entity\MapEntityName.cs" />
-    <Compile Include="Team\Castle\Door\Door.cs" />
-    <Compile Include="Team\Horse\Horse.cs" />
-    <Compile Include="Team\Horse\HorseState.cs" />
-    <Compile Include="Team\Player\Character\Archer\Archer.cs" />
-    <Compile Include="Team\Player\Character\Archer\Arrow.cs" />
-    <Compile Include="Team\Player\Character\Character.cs" />
-    <Compile Include="Team\Player\Character\CharacterName.cs" />
-    <Compile Include="Team\Player\Direction.cs" />
-    <Compile Include="Components\GUI\FontType.cs" />
-    <Compile Include="Castle Bridge\CastleBridge.cs" />
-    <Compile Include="HUD\HUD.cs" />
-    <Compile Include="Components\GUI\Image.cs" />
-    <Compile Include="Map\Map.cs" />
-    <Compile Include="Map\MapName.cs" />
-    <Compile Include="Team\Player\Character\Knight\Knight.cs" />
-    <Compile Include="Team\Player\Character\Mage\EnergyBall.cs" />
-    <Compile Include="Team\Player\Character\Mage\Mage.cs" />
-    <Compile Include="Team\Player\Character\Weapon.cs" />
-    <Compile Include="Team\Player\PlayerState.cs" />
-    <Compile Include="Team\Team.cs" />
-    <Compile Include="Team\TeamName.cs" />
-    <Compile Include="Screen\Menu\MenuScreen.cs" />
-    <Compile Include="Screen\Game\GameScreen.cs" />
-    <Compile Include="Team\Player\Player.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Screen\Screen.cs" />
-    <Compile Include="Screen\ScreenType.cs" />
-    <Compile Include="Components\GUI\Text.cs" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\CastleBridge.OnlineLibraries\CastleBridge.OnlineLibraries.csproj" />
-    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-    <Reference Include="System" />
-    <Reference Include="System.Xml" />
-    <Reference Include="MonoGame.Framework">
-      <HintPath>$(PkgMonoGame_Framework_DesktopGL)\lib\net45\MonoGame.Framework.dll</HintPath>
-    </Reference>
   </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.7.1.189" GeneratePathProperty="true" />
-    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
     <EmbeddedResource Include="Icon.bmp" />
   </ItemGroup>
-  <ItemGroup>
-    <MonoGameContentReference Include="Content\Content.mgcb" />
-    <None Include="app.config" />
-    <None Include="app.manifest" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>
+
+
+
+
 
