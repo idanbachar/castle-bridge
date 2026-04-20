@@ -830,7 +830,7 @@ namespace CastleBridge.Client {
             GameClient.OnRemoveMapEntity += Map.RemoveMapEntity;
 
             //Connect to server thread:
-            new Thread(() => GameClient.Connect("192.168.1.17", 4441)).Start();
+            new Thread(() => GameClient.Connect("127.0.0.1", 4441)).Start();
         }
 
         /// <summary>
