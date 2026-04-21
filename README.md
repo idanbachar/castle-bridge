@@ -202,3 +202,12 @@ dotnet run
 - CastleBridge.Client: Game client, rendering, screens, HUD, characters, map logic
 - CastleBridge.Server: Multiplayer server and networking loop
 - CastleBridge.OnlineLibraries: Shared packets and networking data contracts
+
+---
+
+## License
+
+Copyright © 2026 Idan Bachar. All rights reserved.
+
+This project and its code are proprietary. No part of this software may be copied,
+distributed, or modified without the express written permission of the owner.
